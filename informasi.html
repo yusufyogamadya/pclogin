@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1-rc.0/web3.min.js"
+      integrity="sha512-Ui9NE+/XdhwxssTrWetwWgpwpZJCLgTpB2dgkq+xe3O7lmZEJe+2rw3OT3YbYIUCQWH5dOO8ObLOYmbUVpPBgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      .p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+
+    <div class="navbar-fixed">
+      <nav class="green lighten-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="img/logo2.png" alt="" width="200" height="60" class="d-inline-block align-text-top" /></a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="partisipasi.html">Partisipasi</a></li>
+              <li><a href="informasi.html">Informasi</a></li>
+              <li><a href="produk.html">Produk</a></li>
+              <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Sidenav-->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="partisipasi.html">Partisipasi</a></li>
+      <li><a href="informasi.html">Informasi</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+    <!--Akhir Sidenav-->
+    <!--AKhir Navbar-->
+    <!--Informasi-->
+    <div class="section">
+      <div class="container">
+        <h3 class="center">INFORMASI</h3>
+
+        <p class="p">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus fugit earum error? Recusandae, corporis. Neque eligendi perspiciatis, aliquid fugit voluptates veniam temporibus porro repudiandae architecto odio
+          recusandae quos blanditiis suscipit facilis eius quidem amet animi quod ipsa delectus aperiam praesentium, placeat quam. Quas, nam perspiciatis commodi fugit, voluptatem temporibus magnam cumque soluta iure praesentium dolorem
+          voluptate, unde ab ullam exercitationem maiores. Dolor neque veritatis quae ut nam sit id, inventore, eos voluptatem praesentium, excepturi ad sequi eligendi laudantium. Ea sequi praesentium saepe, nisi provident fugit explicabo
+          magnam laborum earum exercitationem sunt quisquam nam quaerat? Repellendus eius laborum quae sed blanditiis! Alias perspiciatis officiis vitae molestiae voluptatem eum laudantium perferendis neque sunt, similique quae ducimus
+          beatae a corporis exercitationem repellendus impedit id mollitia fugiat temporibus autem aliquam animi architecto? Optio voluptatum odio, iure nihil similique ipsa doloremque voluptatem commodi provident esse unde veniam incidunt
+          illo, qui autem animi repudiandae praesentium.
+        </p>
+        <h3 class="center" id="sampahhariini">INFORMASI</h3>
+        <button class="waves-effect waves-light btn-small" onclick="connecting()">Koneksi Ke Metamask</button>
+      </div>
+    </div>
+
+    <!--Akhir Informasi-->
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="blockchain.js"></script>
+    <script>
+      const sidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sidenav);
+
+      function panggildata() {
+        maincontract.methods
+          .hariini()
+          .call({
+            from: contractAddress,
+          })
+          .then(function (result) {
+            console.log(result);
+            document.getElementById('sampahhariini').innerText = result;
+          });
+        return setInterval(panggildata, 10000);
+      }
+      panggildata();
+    </script>
+  </body>
+</html>

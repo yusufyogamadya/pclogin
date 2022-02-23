@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1-rc.0/web3.min.js"
+      integrity="sha512-Ui9NE+/XdhwxssTrWetwWgpwpZJCLgTpB2dgkq+xe3O7lmZEJe+2rw3OT3YbYIUCQWH5dOO8ObLOYmbUVpPBgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!--Navbar-->
+
+    <div class="navbar-fixed">
+      <nav class="green lighten-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="img/logo2.png" alt="" width="200" height="60" class="d-inline-block align-text-top" /></a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="partisipasi.html">Partisipasi</a></li>
+              <li><a href="informasi.html">Informasi</a></li>
+              <li><a href="produk.html">Produk</a></li>
+              <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Sidenav-->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="partisipasi.html">Partisipasi</a></li>
+      <li><a href="informasi.html">Informasi</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+    <!--Akhir Sidenav-->
+    <!--AKhir Navbar-->
+    <!--Beranda-->
+    <div id="section" class="beranda beranda">
+      <div class="container">
+        <div class="row">
+          <h3>Plastic Chain Indonesia</h3>
+
+          <li><a href="#" id="sampahhariini">0</a></li>
+          <div class="col m6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos repudiandae commodi corporis culpa vitae cum eum tempora inventore architecto? Totam repudiandae reiciendis velit. Quia, iure blanditiis. Error
+              autem minima deserunt accusamus modi eum quasi architecto, vero, amet molestiae incidunt quae, repudiandae libero nesciunt! Qui ipsam unde, voluptatum natus accusamus nobis ea maiores nemo quae sint.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos repudiandae commodi corporis culpa vitae cum eum tempora inventore architecto? Totam repudiandae reiciendis velit. Quia, iure blanditiis. Error
+              autem minima deserunt accusamus modi eum quasi architecto, vero, amet molestiae incidunt quae, repudiandae libero nesciunt! Qui ipsam unde, voluptatum natus accusamus nobis ea maiores nemo quae sint.
+            </p>
+            <a class="waves-effect waves-light btn-small" href="partisipasi.html"><i class="material-icons left">cloud</i>Partisipasi</a>
+            <a class="waves-effect waves-light btn-small" href="informasi.html"><i class="material-icons right">info</i>Informasi</a>
+          </div>
+          <div class="col m6">
+            <img src="img/quokkabottles-Unr5h0-Qvxs-unsplash.jpg" alt="" width="450" height="450" class="d-inline-block align-text-top" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Akhir Beranda-->
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="blockchain.js"></script>
+    <script>
+      const sidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sidenav);
+    </script>
+  </body>
+</html>

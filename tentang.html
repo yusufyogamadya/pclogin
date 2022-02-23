@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!--Navbar-->
+
+    <div class="navbar-fixed">
+      <nav class="green lighten-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="img/logo2.png" alt="" width="200" height="60" class="d-inline-block align-text-top" /></a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="partisipasi.html">Partisipasi</a></li>
+              <li><a href="informasi.html">Informasi</a></li>
+              <li><a href="produk.html">Produk</a></li>
+              <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Sidenav-->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="partisipasi.html">Partisipasi</a></li>
+      <li><a href="informasi.html">Informasi</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+    </ul>
+    <!--Akhir Sidenav-->
+    <!--AKhir Navbar-->
+    <!--Tentang-->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col m6">
+            <h3>Visi</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem expedita necessitatibus vero, esse cupiditate id aliquid fugit aperiam eius! Nesciunt iusto dicta quae quasi quod ad dolor illo neque accusamus iure molestiae
+              maxime accusantium, voluptatem non placeat debitis. Temporibus modi ullam vel voluptatem nemo eligendi accusamus iste quam laudantium quidem.
+            </p>
+            <h3>Misi</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa consequatur molestiae porro dolorem, libero omnis dignissimos nesciunt ex alias tempore, id provident velit officia exercitationem sunt. Sed, dolor. Quaerat
+              assumenda doloremque harum iure atque dicta vitae corporis, voluptates animi quod! Nemo voluptatibus, id consectetur harum ipsum deleniti necessitatibus ratione?
+            </p>
+          </div>
+          <div class="col m6"><img src="img/jordan-beltran-AxdlcxaModc-unsplash.jpg" alt="" width="450" height="450" class="d-inline-block align-text-top" /></div>
+        </div>
+        <a class="waves-effect waves-light btn-small" href="login.html"><i class="material-icons right">assessment</i>Login Input</a>
+      </div>
+    </div>
+    <!--Akhir Tentang-->
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      const sidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sidenav);
+    </script>
+  </body>
+</html>
